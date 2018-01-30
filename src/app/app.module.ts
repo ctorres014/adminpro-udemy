@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { APP_ROUTES } from './app.routes';
 // PageModule
 import { PagesModule } from './pages/pages.module';
-
+// Service
+import { SettingsService } from './services/settings.service';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
 
 
 
@@ -28,7 +30,7 @@ import { RegisterComponent } from './login/register.component';
     APP_ROUTES,
     FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
